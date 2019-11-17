@@ -1,18 +1,29 @@
 {
   "name": "todo-app",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.16.4",
+    "mongodb": "^3.2.6",
+    "nodemon": "^1.18.10",
+    "sanitize-html": "^1.20.0"
   },
   "devDependencies": {},
   "scripts": {
-    "watch":"nodemon server",
+    "watch": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archy26/todoapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/archy26/todoapp/issues"
+  },
+  "homepage": "https://github.com/archy26/todoapp#readme",
+  "description": ""
 }
