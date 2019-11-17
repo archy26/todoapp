@@ -16,7 +16,9 @@ list_item.insertAdjacentHTML("beforeend",ourHTML);
 document.getElementById("create_form").addEventListener("submit",(e)=>{
 e.preventDefault();
 axios.post('/create_item',{text:createField.value}).then((response)=>{
-   document.getElementById("list_item").insertAdjacentHTML("beforeend",itemTemplate(response.data))
+   document.getElementById("list_item").insertAdjacentHTML("beforeend",itemTemplate(response.data));
+   createField.value = ""
+    createField.focus()
 }).catch(()=>{
     console.log("please try again");
 });
