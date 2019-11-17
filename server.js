@@ -73,7 +73,7 @@ app.get('/',(req,res)=>{
 app.post('/create_item',(req,res)=>{
     let safeText=sanitizeHTML(req.body.text,{allowedTags:[],allowedAttributes:{}});
     db.collection('items').insertOne({text:safeText},(err,info)=>{
-        console.log(info.ops[0]);
+        //console.log(info.ops[0]);
         res.json(info.ops[0]);
     })
 })
